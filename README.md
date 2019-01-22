@@ -7,19 +7,35 @@ Video of it in action: https://www.twitch.tv/videos/367828464
 
 - We take the top 16% of the frame, convert it to grayscale, run OCR on it and see if it says "POSTGAME CARNAGE REPORT"
 
-![Nope](https://raw.githubusercontent.com/CYRiXplaysHalo/XboxHaloPGCRScraper/master/13844.png)
+![Nope](13844.png)
 
-![Nope](https://raw.githubusercontent.com/CYRiXplaysHalo/XboxHaloPGCRScraper/master/11312.png)
+![Nope](11312.png)
 
 There we go:
 
-![Yup!](https://raw.githubusercontent.com/CYRiXplaysHalo/XboxHaloPGCRScraper/master/10096.png)
+![Yup!](10096.png)
 
 And then we save the whole screen:
 
-![Perfect!](https://raw.githubusercontent.com/CYRiXplaysHalo/XboxHaloPGCRScraper/master/4_21.png)
+![Perfect!](4_21.png)
 
-# Instructions
+# Usage
+```
+usage: halo_scrape.py [-h] (-v VIDEO | -i INDEX | --image IMAGE) [--version]
+                      [--debug]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v VIDEO, --video VIDEO
+                        path to input video
+  -i INDEX, --index INDEX
+                        index of device to capture video from
+  --image IMAGE         path to image to check for winner
+  --version             show program's version number and exit
+  --debug               enable debug logging
+```
+
+# Installation Instructions
 
 - Get Python (I used 3.7) and install the following libraries
   - PIL
